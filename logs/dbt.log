@@ -98,3 +98,189 @@ Happy modeling!
 [0m09:14:27.454930 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
 [0m09:14:27.456007 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
 [0m09:14:27.457011 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:36:39.756415 [error] [MainThread]: Encountered an error:
+
+[0m09:36:39.805954 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m09:36:39.807942 [debug] [MainThread]: Command `dbt init` failed at 09:36:39.807942 after 1343.92 seconds
+[0m09:36:39.808951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194AD381B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194A9F9D340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194C0AA7F20>]}
+[0m09:36:39.808951 [debug] [MainThread]: Flushing usage events
+[0m09:36:40.237213 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:36:51.360229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7D92CB710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7D92C9F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7D92C92B0>]}
+
+
+============================== 09:36:51.363239 | a6c71515-f9b5-458a-97e3-521460ba78cb ==============================
+[0m09:36:51.363239 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:36:51.364238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:37:02.427699 [debug] [MainThread]: Starter project path: C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m09:37:02.445837 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:37:02.446868 [info ] [MainThread]: Setting up your profile.
+[0m09:37:05.302080 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:37:05.303080 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:37:05.303080 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:15:54.607658 [error] [MainThread]: Encountered an error:
+
+[0m10:15:54.613652 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:15:54.617651 [debug] [MainThread]: Command `dbt init` failed at 10:15:54.616651 after 2343.37 seconds
+[0m10:15:54.617651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7D6F49220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7D2FE59D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7EA3925A0>]}
+[0m10:15:54.618650 [debug] [MainThread]: Flushing usage events
+[0m10:15:55.038681 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:16:49.688564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235FDE5B8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235FDE586E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235FDE5A390>]}
+
+
+============================== 10:16:49.692074 | ecfc2f21-bfab-45d8-bda3-361e616749af ==============================
+[0m10:16:49.692074 [info ] [MainThread]: Running with dbt=1.9.0
+[0m10:16:49.693065 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:16:54.659357 [debug] [MainThread]: Starter project path: C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m10:16:54.674590 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:16:54.675592 [info ] [MainThread]: Setting up your profile.
+[0m10:17:05.148241 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:17:05.148241 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:17:05.149241 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:17:39.754420 [error] [MainThread]: Encountered an error:
+
+[0m10:17:39.760415 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:17:39.762617 [debug] [MainThread]: Command `dbt init` failed at 10:17:39.762617 after 50.19 seconds
+[0m10:17:39.763617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235FD91FFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002359067B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002359067BF50>]}
+[0m10:17:39.763617 [debug] [MainThread]: Flushing usage events
+[0m10:17:40.222232 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:17:55.094668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E36131F1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E36131CA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E36131D850>]}
+
+
+============================== 10:17:55.098205 | 7b01c292-e129-4fee-9009-7e0df354bdcf ==============================
+[0m10:17:55.098205 [info ] [MainThread]: Running with dbt=1.9.0
+[0m10:17:55.098205 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:18:00.137284 [debug] [MainThread]: Starter project path: C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m10:18:00.157654 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:18:00.158664 [info ] [MainThread]: Setting up your profile.
+[0m10:18:02.226687 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:18:02.227688 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:18:02.227688 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
