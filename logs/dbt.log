@@ -1,0 +1,31 @@
+[0m08:26:08.827418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AF400950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AD13F8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AC231880>]}
+
+
+============================== 08:26:08.831418 | 9fb97ddc-16d5-4724-9b39-7b9b38fecc5e ==============================
+[0m08:26:08.831418 [info ] [MainThread]: Running with dbt=1.8.8
+[0m08:26:08.832405 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:26:14.730988 [debug] [MainThread]: Starter project path: C:\Users\Haroon\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m08:26:14.753177 [info ] [MainThread]: 
+Your new dbt project "datapipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:26:14.753981 [info ] [MainThread]: Setting up your profile.
+[0m08:26:25.435754 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m08:26:25.435754 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m08:26:25.436791 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m08:28:53.043416 [info ] [MainThread]: Profile datapipeline written to C:\Users\Haroon\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m08:28:53.044795 [debug] [MainThread]: Command `dbt init` succeeded at 08:28:53.044795 after 164.31 seconds
+[0m08:28:53.045794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AF2E30B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AFE45100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8C2685AF0>]}
+[0m08:28:53.045794 [debug] [MainThread]: Flushing usage events
