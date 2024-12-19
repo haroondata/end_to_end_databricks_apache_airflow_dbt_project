@@ -29,3 +29,17 @@ Happy modeling!
 [0m08:28:53.044795 [debug] [MainThread]: Command `dbt init` succeeded at 08:28:53.044795 after 164.31 seconds
 [0m08:28:53.045794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AF2E30B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8AFE45100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8C2685AF0>]}
 [0m08:28:53.045794 [debug] [MainThread]: Flushing usage events
+[0m16:18:59.217174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E38D9B7230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E38D001190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E38D001850>]}
+
+
+============================== 16:18:59.222179 | d6475be5-0053-4d82-996e-e52f1b22021a ==============================
+[0m16:18:59.222179 [info ] [MainThread]: Running with dbt=1.8.8
+[0m16:18:59.223178 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:18:59.223178 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Haroon\Documents\GitHub\end_to_end_databricks_apache_airflow_dbt_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:18:59.224179 [debug] [MainThread]: Command `dbt run` failed at 16:18:59.224179 after 0.13 seconds
+[0m16:18:59.225180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3906FB530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E38D9B7230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3901D2B40>]}
+[0m16:18:59.225180 [debug] [MainThread]: Flushing usage events
