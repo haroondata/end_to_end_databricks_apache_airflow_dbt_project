@@ -1,8 +1,5 @@
-version: 2
-
 sources:
   - name: tpch
-    database: samples
     schema: tpch
     tables:
       - name: orders
@@ -16,6 +13,5 @@ sources:
           - name: l_orderkey
             tests:
               - relationships:
-                  to: source('tpch', 'orders')
+                  to: ref('orders')
                   field: o_orderkey
-

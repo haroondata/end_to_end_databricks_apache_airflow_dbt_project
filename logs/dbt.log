@@ -43,3 +43,45 @@ Runtime Error
 [0m16:18:59.224179 [debug] [MainThread]: Command `dbt run` failed at 16:18:59.224179 after 0.13 seconds
 [0m16:18:59.225180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3906FB530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E38D9B7230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3901D2B40>]}
 [0m16:18:59.225180 [debug] [MainThread]: Flushing usage events
+[0m16:20:27.537627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223F5144260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223F75860F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223F7AC3500>]}
+
+
+============================== 16:20:27.541640 | dc014181-43c1-48d8-83b8-689420a7f1fa ==============================
+[0m16:20:27.541640 [info ] [MainThread]: Running with dbt=1.8.8
+[0m16:20:27.541640 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:27.542643 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Haroon\Documents\GitHub\end_to_end_databricks_apache_airflow_dbt_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:20:27.543632 [debug] [MainThread]: Command `dbt run` failed at 16:20:27.543632 after 0.09 seconds
+[0m16:20:27.543632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223F5144260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223F7528E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223F7BD7CE0>]}
+[0m16:20:27.543632 [debug] [MainThread]: Flushing usage events
+[0m16:20:56.114718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E52C7401D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E52C005160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E52C6536E0>]}
+
+
+============================== 16:20:56.119035 | 85c45525-f1a9-47cc-a8bf-a2953b6d7e8f ==============================
+[0m16:20:56.119035 [info ] [MainThread]: Running with dbt=1.8.8
+[0m16:20:56.119035 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:56.120046 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Haroon\Documents\GitHub\end_to_end_databricks_apache_airflow_dbt_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:20:56.121034 [debug] [MainThread]: Command `dbt run` failed at 16:20:56.121034 after 0.09 seconds
+[0m16:20:56.122035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E52C684CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E52C005160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E52BFD3500>]}
+[0m16:20:56.122035 [debug] [MainThread]: Flushing usage events
+[0m16:33:34.115539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ADDB01C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ADDB020C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ADDB02DB0>]}
+
+
+============================== 16:33:34.119543 | 8e7a21cf-35a0-4159-9e7d-4cf7d040c0dc ==============================
+[0m16:33:34.119543 [info ] [MainThread]: Running with dbt=1.8.8
+[0m16:33:34.119543 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:33:34.120543 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Haroon\Documents\GitHub\end_to_end_databricks_apache_airflow_dbt_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:33:34.121552 [debug] [MainThread]: Command `dbt run` failed at 16:33:34.121552 after 0.09 seconds
+[0m16:33:34.121552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ADE243380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ADDB01C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024ADDB00B30>]}
+[0m16:33:34.121552 [debug] [MainThread]: Flushing usage events
