@@ -1,0 +1,17 @@
+sources:
+  - name: tpch
+    schema: tpch
+    tables:
+      - name: orders
+        columns:
+          - name: o_orderkey
+            tests:
+              - unique
+              - not_null
+      - name: lineitem
+        columns:
+          - name: l_orderkey
+            tests:
+              - relationships:
+                  to: ref('orders')
+                  field: o_orderkey
