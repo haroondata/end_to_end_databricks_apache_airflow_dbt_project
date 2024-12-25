@@ -19,15 +19,14 @@ profile_config = ProfileConfig(
 
 # dbt DAG Definition
 dbt_databricks_dag = DbtDag(
-    project_config=ProjectConfig("/usr/local/airflow/dags/dbt/data_pipeline"),
+    dag_id="dbt_databricks_dag",
+    project_config=ProjectConfig("C:/Users/Haroon/Documents/GitHub/end_to_end_databricks_apache_airflow_dbt_project/dbt-dag/dags/dbt/datapipeline"),
     operator_args={"install_deps": True},
     profile_config=profile_config,
     execution_config=ExecutionConfig(
-        dbt_executable_path=f"{os.environ['AIRFLOW_HOME']}/dbt_venv/bin/dbt",
-        dbt_args={"--debug": True},  # Optional: Add debugging
+        dbt_executable_path=f"{os.environ['AIRFLOW_HOME']}\\dbt_venv\\Scripts\\dbt"
     ),
     schedule_interval="@daily",
     start_date=datetime(2024, 12, 21),
     catchup=False,
-    dag_id="dbt_dag",
 )
