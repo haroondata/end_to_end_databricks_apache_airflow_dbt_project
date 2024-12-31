@@ -20,7 +20,7 @@ profile_config = ProfileConfig(
 # dbt DAG Definition
 dbt_databricks_dag = DbtDag(
     dag_id="dbt_databricks_dag",
-    project_config=ProjectConfig("C:/Users/Haroon/Documents/GitHub/end_to_end_databricks_apache_airflow_dbt_project/dbt-dag/dags/dbt/datapipeline"),
+    project_config=ProjectConfig(f"{os.environ['AIRFLOW_HOME']}/dbt-dag/dags/dbt/datapipeline"),
     operator_args={"install_deps": True},
     profile_config=profile_config,
     execution_config=ExecutionConfig(
