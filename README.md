@@ -1,4 +1,4 @@
-1. Setup dbt + Snowflake
+1. Setup dbt + databricks
 2. Configure dbt_project.yml and packages
 3. Create source and staging tables
 4. Transformed models (fact tables, data marts)
